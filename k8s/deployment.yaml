@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server-pod-orderservice
+  labels:
+    name: server-pod-orderservice
+    app: cluster-1
+
+spec:
+  containers:
+    - name: server-pod-orderservice
+      image: pasindusandun/cluster-1
+      ports:
+        - containerPort: 5000
